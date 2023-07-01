@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+    <title>Server State</title>
+    <script>
+        function getStatement(){
+            var mysql = require('mysql');
+            var con = mysql.createConnection({
+                host: "212.22.92.26:3306",
+                user: "qemgkhrw",
+                password: "changeme"
+            });
+            con.connect(function(err) {
+                if (err) throw err;
+                console.log("Connected!");
+            });
+        }
+    </script>
+</head>
+<body onload="getStatement">
+    <div class="statement-card">
+        <h1>ReBirth 7</h1>
+        <h1 id="label" class="statement-label">Server</h1>
+    </div>
+</body>
+</html>
