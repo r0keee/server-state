@@ -17,17 +17,17 @@
                 password: "changeme"
             });
             con.connect(function(err) {
-            if (err) throw err;
-            console.log("Connected!");
-            con.query(sql, function (err, result) {
                 if (err) throw err;
-            console.log("Result: " + result);
+                console.log("Connected!");
+                con.query("SELECT working_state FROM properties", function (err, result) {
+                    if (err) throw err;
+                    console.log("Result: " + result);
                 });
             });
         }
     </script>
 </head>
-<body onload="getStatement">
+<body onload="getStatement();">
     <div class="statement-card">
         <h1>ReBirth 7</h1>
         <h1 id="label" class="statement-label">Server</h1>
