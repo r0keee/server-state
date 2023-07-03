@@ -1,0 +1,7 @@
+name: my_maintainer
+version: '1.0-SNAPSHOT'
+main: me.mpg.my_maintainer.My_maintainer
+api-version: '1.20'
+commands:
+  statement:
+    description: Allows to set working statement of the server to theirs Database.

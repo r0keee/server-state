@@ -1,0 +1,39 @@
+body {
+    background-image: url("../_img/blackstone.webp");
+}
+
+#here {
+    display: block;
+    text-align: center;
+    background-image: url("../_img/deepslate_coal.webp");
+    color: white;
+    padding: 20px;
+    border-radius: 25px;
+    font-family: 'Rubik Mono One', sans-serif;
+    font-size: 1em;
+    width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    border: 5px solid black;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 650px;
+  margin-top: 50px;
+}
+
+@media (max-width: 600px) {
+    #here {
+        width: 200px;
+        font-size: 0.65em;
+        border: 2px solid black;
+    }
+    img {
+        width: 350px;
+    }
+}
+
